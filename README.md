@@ -106,20 +106,3 @@ healthcare-chatbot/
 ## ⚠️ Disclaimer
 
 This chatbot is for **informational purposes only** and does not constitute medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional for medical concerns. In case of a medical emergency, call **119** (Korea) or **911** (US) immediately.
-
----
-
-## 🔮 Future Improvements
-
-- [ ] Add vision/eye health specialization module (inspired by J&J Vision Care)
-- [ ] Integrate symptom checker with triage logic
-- [ ] Build web UI using Streamlit or Flask
-- [ ] Add support for image input (e.g., skin condition photos)
-- [ ] Implement RAG with verified medical knowledge base
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
