@@ -18,7 +18,7 @@ This project is my attempt to bridge that gap using AI. By combining my backgrou
 
 ## ✨ Features
 
-- 💬 **Real-time chat interface (Streamlit)** — ## 🔗 Live Demo https://https://healthcareq-achatbot-buxe4lsbwqyhxrd92n9h7c.streamlit.app
+- 💬 **Real-time chat interface (Streamlit)** — **🔗 [Live Demo](https://https://healthcareq-achatbot-buxe4lsbwqyhxrd92n9h7c.streamlit.app)**
 - 🏥 **Healthcare-specialized** — system prompt tuned for medical Q&A
 - 🌐 **Bilingual support** — responds in English or Korean based on user input
 - 🔒 **Safety guardrails** — never diagnoses; always recommends professional consultation
@@ -33,7 +33,7 @@ This project is my attempt to bridge that gap using AI. By combining my backgrou
 |-----------|------------|
 | Language | Python 3.8+ |
 | AI Model | Gemini 2.5 Flash (Google AI) |
-| Interface | Streamlit + Jupyter Notebook |
+| Interface | Streamlit UI + Jupyter Notebook |
 | Key Libraries | `google-generativeai`, `python-dotenv`, `streamlit` |
 
 ---
@@ -102,10 +102,9 @@ Run **Section 6** to see example Q&A without interactive input — great for tes
 ```
 healthcare-chatbot/
 │
+├── app.py # Streamlit app
 ├── healthcare_chatbot.ipynb   # Main notebook
 ├── requirements.txt           # Dependencies
-├── .env                       # API key (not committed)
-├── .gitignore                 # Excludes .env and outputs
 └── README.md                  # This file
 ```
 
