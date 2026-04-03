@@ -19,6 +19,8 @@ This project is my attempt to bridge that gap using AI. By combining my backgrou
 ## ✨ Features
 
 - 💬 **Real-time chat interface (Streamlit)** — **🔗 [Live Demo](https://healthcareq-achatbot-buxe4lsbwqyhxrd92n9h7c.streamlit.app)**
+  <img width="1919" height="962" alt="image" src="https://github.com/user-attachments/assets/82e43589-d5ae-46ff-b3ce-ff988b76573a" />
+
 - 🏥 **Healthcare-specialized** — system prompt tuned for medical Q&A
 - 🌐 **Bilingual support** — responds in English or Korean based on user input
 - 🔒 **Safety guardrails** — never diagnoses; always recommends professional consultation
@@ -35,65 +37,6 @@ This project is my attempt to bridge that gap using AI. By combining my backgrou
 | AI Model | Gemini 2.5 Flash (Google AI) |
 | Interface | Streamlit UI + Jupyter Notebook |
 | Key Libraries | `google-generativeai`, `python-dotenv`, `streamlit` |
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/your-username/healthcare-chatbot.git
-cd healthcare-chatbot
-```
-
-### 2. Install dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Get your FREE API key
-
-This project uses the **Google Gemini API**, which offers a generous free tier — **no credit card required**.
-
-1. Go to [aistudio.google.com](https://aistudio.google.com)
-2. Sign in with your Google account
-3. Click **"Get API key"** → **"Create API key"**
-4. Create a `.env` file in the project root:
-
-```
-GEMINI_API_KEY=your_api_key_here
-```
-
-
-### 4. Launch the notebook
-```bash
-jupyter notebook healthcare_chatbot.ipynb
-```
-
----
-
-## 💻 Usage
-
-### Interactive Chat
-Run **Section 5** of the notebook for a live chat session.
-
-```
-👤 You: What are the symptoms of dry eye syndrome?
-
-🏥 Assistant: Dry eye syndrome occurs when your eyes don't produce
-enough tears or the right quality of tears...
-```
-
-### Available Commands
-| Command | Action |
-|---------|--------|
-| `quit` / `exit` / `종료` | End the session |
-| `reset` | Start a new conversation |
-| `history` | View full chat history |
-| `export` | Save conversation to JSON |
-
-### Demo Mode
-Run **Section 6** to see example Q&A without interactive input — great for testing.
 
 ---
 
@@ -115,8 +58,6 @@ healthcare-chatbot/
 |  Gemini 2.5 Flash 
 |---|---|---|
 | Cost | 💚 **Free** | Paid |
-| Speed | ⚡ Very fast | Moderate |
-| Context window | 1M tokens | 1M tokens |
 | Quality | Excellent for Q&A ✅ | More nuanced |
 | Best for | This chatbot | Complex reasoning |
 
