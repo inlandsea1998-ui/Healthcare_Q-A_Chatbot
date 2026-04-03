@@ -1,4 +1,4 @@
-# API Keys - AIzaSyDq3vrx0BiwEuLrkCiUfmEltxTIQBWcgtY
+# API Keys - NEVER commit this
 .env
 
 # Exported conversations
@@ -19,4 +19,4 @@ build/
 
 # OS
 .DS_Store
-Thumbbs.db
+Thumbs.db
