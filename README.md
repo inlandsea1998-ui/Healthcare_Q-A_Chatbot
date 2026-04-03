@@ -18,7 +18,7 @@ This project is my attempt to bridge that gap using AI. By combining my backgrou
 
 ## ✨ Features
 
-- 💬 **Real-time chat interface (Streamlit)** — remembers context throughout the session
+- 💬 **Real-time chat interface (Streamlit)** — ## 🔗 Live Demo https://https://healthcareq-achatbot-buxe4lsbwqyhxrd92n9h7c.streamlit.app
 - 🏥 **Healthcare-specialized** — system prompt tuned for medical Q&A
 - 🌐 **Bilingual support** — responds in English or Korean based on user input
 - 🔒 **Safety guardrails** — never diagnoses; always recommends professional consultation
