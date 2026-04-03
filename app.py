@@ -133,12 +133,7 @@ html, body, [class*="css"] {
 
 # ── API Key setup ───────────────────────────────────────────────────────────────
 # Streamlit Cloud: set via Settings → Secrets as GEMINI_API_KEY = "..."
-# Local: set in .env file
-api_key = st.secrets.get("GEMINI_API_KEY", os.environ.get("GEMINI_API_KEY", ""))
-
-if not api_key:
-    st.error("⚠️ GEMINI_API_KEY not found. Add it to Streamlit Secrets or your .env file.")
-    st.stop()
+api_key = st.secrets.get("GEMINI_API_KEY")
 
 genai.configure(api_key=api_key)
 
