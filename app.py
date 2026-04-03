@@ -1,5 +1,5 @@
 import streamlit as st
-import google.genai
+import google.genai as genai
 import os
 from datetime import datetime
 import json
