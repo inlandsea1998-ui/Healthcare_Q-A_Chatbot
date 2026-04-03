@@ -1,0 +1,22 @@
+# API Keys - NEVER commit this
+.env
+
+# Exported conversations
+*.json
+!package.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# OS
+.DS_Store
+Thumbbs.db
