@@ -1,5 +1,5 @@
 import streamlit as st
-import google.generativeai as genai
+import google.genai as genai
 import os
 from datetime import datetime
 import json
@@ -133,12 +133,7 @@ html, body, [class*="css"] {
 
 # ── API Key setup ───────────────────────────────────────────────────────────────
 # Streamlit Cloud: set via Settings → Secrets as GEMINI_API_KEY = "..."
-# Local: set in .env file
-api_key = st.secrets.get("GEMINI_API_KEY", os.environ.get("GEMINI_API_KEY", ""))
-
-if not api_key:
-    st.error("⚠️ GEMINI_API_KEY not found. Add it to Streamlit Secrets or your .env file.")
-    st.stop()
+api_key = st.secrets.get("GEMINI_API_KEY")
 
 genai.configure(api_key=api_key)
 
@@ -176,7 +171,7 @@ information accessible and reducing health anxiety through clear communication.
 # ── Session state ───────────────────────────────────────────────────────────────
 if "chat_session" not in st.session_state:
     model = genai.GenerativeModel(
-        model_name="gemini-1.5-flash",
+        model_name="gemini-2.5-flash",
         system_instruction=SYSTEM_PROMPT,
     )
     st.session_state.chat_session = model.start_chat(history=[])
@@ -191,7 +186,7 @@ with st.sidebar:
 
     if st.button("🔄 Reset conversation", use_container_width=True):
         model = genai.GenerativeModel(
-            model_name="gemini-1.5-flash",
+            model_name="gemini-2.5-flash",
             system_instruction=SYSTEM_PROMPT,
         )
         st.session_state.chat_session = model.start_chat(history=[])
@@ -203,7 +198,7 @@ with st.sidebar:
         if st.session_state.messages:
             export = {
                 "session_start": st.session_state.session_start,
-                "model": "gemini-1.5-flash",
+                "model": "gemini-2.5-flash",
                 "conversation": st.session_state.messages,
             }
             st.download_button(
