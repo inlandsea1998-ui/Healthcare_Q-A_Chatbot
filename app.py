@@ -176,7 +176,7 @@ information accessible and reducing health anxiety through clear communication.
 # ── Session state ───────────────────────────────────────────────────────────────
 if "chat_session" not in st.session_state:
     model = genai.GenerativeModel(
-        model_name="gemini-1.5-flash",
+        model_name="gemini-2.5-flash",
         system_instruction=SYSTEM_PROMPT,
     )
     st.session_state.chat_session = model.start_chat(history=[])
@@ -191,7 +191,7 @@ with st.sidebar:
 
     if st.button("🔄 Reset conversation", use_container_width=True):
         model = genai.GenerativeModel(
-            model_name="gemini-1.5-flash",
+            model_name="gemini-2.5-flash",
             system_instruction=SYSTEM_PROMPT,
         )
         st.session_state.chat_session = model.start_chat(history=[])
@@ -203,7 +203,7 @@ with st.sidebar:
         if st.session_state.messages:
             export = {
                 "session_start": st.session_state.session_start,
-                "model": "gemini-1.5-flash",
+                "model": "gemini-2.5-flash",
                 "conversation": st.session_state.messages,
             }
             st.download_button(
