@@ -1,5 +1,5 @@
 # 🏥 Healthcare Q&A Chatbot
-**Powered by Google Gemini API | Python & Jupyter Notebook**
+**Powered by Google Gemini API | Python & Jupyter Notebook & Streamlit**
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![Gemini](https://img.shields.io/badge/Google-Gemini_2.5_Flash-blue.svg)
