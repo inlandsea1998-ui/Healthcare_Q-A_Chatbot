@@ -2,7 +2,7 @@
 **Powered by Google Gemini API | Python & Jupyter Notebook**
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![Gemini](https://img.shields.io/badge/Google-Gemini_1.5_Flash-blue.svg)
+![Gemini](https://img.shields.io/badge/Google-Gemini_2.5_Flash-blue.svg)
 ![Free Tier](https://img.shields.io/badge/API-100%25_Free-brightgreen.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
@@ -18,7 +18,7 @@ This project is my attempt to bridge that gap using AI. By combining my backgrou
 
 ## ✨ Features
 
-- 💬 **Multi-turn conversation** — remembers context throughout the session
+- 💬 **Real-time chat interface (Streamlit)** — remembers context throughout the session
 - 🏥 **Healthcare-specialized** — system prompt tuned for medical Q&A
 - 🌐 **Bilingual support** — responds in English or Korean based on user input
 - 🔒 **Safety guardrails** — never diagnoses; always recommends professional consultation
@@ -32,9 +32,9 @@ This project is my attempt to bridge that gap using AI. By combining my backgrou
 | Component | Technology |
 |-----------|------------|
 | Language | Python 3.8+ |
-| AI Model | Gemini 1.5 Flash (Google AI) |
-| Interface | Jupyter Notebook |
-| Key Libraries | `google-generativeai`, `python-dotenv` |
+| AI Model | Gemini 2.5 Flash (Google AI) |
+| Interface | Streamlit + Jupyter Notebook |
+| Key Libraries | `google-generativeai`, `python-dotenv`, `streamlit` |
 
 ---
 
@@ -64,12 +64,6 @@ This project uses the **Google Gemini API**, which offers a generous free tier �
 GEMINI_API_KEY=your_api_key_here
 ```
 
-> **Free Tier Limits (Gemini 1.5 Flash):**
-> - 15 requests per minute
-> - 1,500 requests per day
-> - 1 million tokens per minute
->
-> This is more than enough for personal projects, demos, and portfolio use.
 
 ### 4. Launch the notebook
 ```bash
@@ -117,9 +111,9 @@ healthcare-chatbot/
 
 ---
 
-## 🤖 Model Choice: Why Gemini 1.5 Flash?
+## 🤖 Model Choice: Why Gemini 2.5 Flash?
 
-| | Gemini 1.5 Flash | Gemini 1.5 Pro |
+|  Gemini 2.5 Flash 
 |---|---|---|
 | Cost | 💚 **Free** | Paid |
 | Speed | ⚡ Very fast | Moderate |
@@ -127,9 +121,7 @@ healthcare-chatbot/
 | Quality | Excellent for Q&A ✅ | More nuanced |
 | Best for | This chatbot | Complex reasoning |
 
-Gemini 1.5 Flash provides excellent response quality for a healthcare Q&A use case while being completely free under the Google AI Studio free tier.
-
-> 💡 **Want to upgrade?** Change the `model` parameter in Section 4 to `gemini-1.5-pro` for more nuanced responses.
+Gemini 2.5 Flash provides excellent response quality for a healthcare Q&A use case while being completely free under the Google AI Studio free tier.
 
 ---
 
@@ -141,9 +133,7 @@ This chatbot is for **informational purposes only** and does not constitute medi
 
 ## 🔮 Future Improvements
 
-- [ ] Add vision/eye health specialization module (inspired by J&J Vision Care)
 - [ ] Integrate symptom checker with triage logic
-- [ ] Build web UI using Streamlit or Flask
 - [ ] Add support for image input (e.g., skin condition photos)
 - [ ] Implement RAG with verified medical knowledge base
 
